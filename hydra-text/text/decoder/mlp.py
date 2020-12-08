@@ -28,3 +28,12 @@ class MLPDecoderConf:
     bias: bool = MISSING
     hidden_dims: List[int] = None
     activation: Any = MISSING  # Module
+
+
+@dataclass
+class ResidualMLPConf:
+    _target_: str = "text.decoder.mlp.ResidualMLP"
+    input_dim: int = MISSING
+    hidden_dims: List[int] = MISSING
+    dropout: float = 0.1
+    activation: Any = MISSING  # type
