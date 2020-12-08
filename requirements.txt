@@ -1,2 +1,2 @@
 hydra
--e git://github.com/snisarg/text.git#egg=text
+svcca @ git+http://github.com/snisarg/text.git#egg=text
