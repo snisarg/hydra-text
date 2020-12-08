@@ -1,0 +1,2 @@
+hydra
+-e git://github.com/snisarg/text.git#egg=text
