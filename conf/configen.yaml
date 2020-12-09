@@ -21,3 +21,10 @@ configen:
         - ReLU
         - MLPDecoder
         - ResidualMLP
+    - name: text.representation.attention
+      classes:
+        - MultiheadSelfAttention
+    - name: text.representation.transformers
+      classes:
+        - ResidualMLP
+        - TransformerLayer
