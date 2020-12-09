@@ -16,6 +16,7 @@ configen:
     - name: text.decoder.mlp
       # for each module, a list of classes
       classes:
+        - ActivationFn
         - GeLU
         - ReLU
         - MLPDecoder

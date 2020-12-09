@@ -11,6 +11,11 @@ from typing import List
 
 
 @dataclass
+class ActivationFnConf:
+    _target_: str = "text.decoder.mlp.ActivationFn"
+
+
+@dataclass
 class GeLUConf:
     _target_: str = "text.decoder.mlp.GeLU"
 
