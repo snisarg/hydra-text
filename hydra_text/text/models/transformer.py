@@ -7,9 +7,11 @@
 from dataclasses import dataclass, field
 from typing import Optional
 
+from hydra_text.text.models.manual_additions import ModelConf
+
 
 @dataclass
-class RobertaModelConf:
+class RobertaModelConf(ModelConf):
     _target_: str = "text.models.transformer.RobertaModel"
     model_path: Optional[str] = None
     vocab_size: int = 50265
